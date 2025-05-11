@@ -103,7 +103,7 @@ async function findWebsiteRank(keyword, targetDomain) {
 }
 // API endpoint to search and get rank
 app.post('/api/search', async (req, res) => {
-  const { keyword, targetDomain = 'collegedunia.com' } = req.body;
+  const { keyword, targetDomain = 'kollegeapply.com' } = req.body;
   
   if (!keyword) {
     return res.status(400).json({ error: 'Keyword is required' });
